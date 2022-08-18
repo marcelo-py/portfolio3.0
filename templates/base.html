@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%include 'parciais/_head.html'%}
+    <title>{%block titulo%}Inicial{%endblock%}</title>
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <script src="{%static 'javascript/scripts.js'%}"></script>
+    <style>
+        @media (max-width: 700px){
+            .header nav ul{
+                display: none;
+            }
+            .header nav ul li{
+                margin: 5px 0;
+            }
+            .header nav{
+                width: 40px;
+                height: 40px;
+                background-image: url("{%static 'imagens/menu.svg'%}");
+                background-position: 0;
+                background-size: 100%;
+            }
+            .header nav:hover{
+                width: auto;
+                height: auto;
+                background-image: none;
+                right: 10px;
+                padding-top: 43px;
+                position: absolute;
+            }
+            .header nav:hover > ul{
+                display: block;
+            }
+        }
+        body{
+            background-image: url("{%static 'imagens/capa.png'%}");
+            background-size: 100%;
+        }
+        .main #img{
+            background-image: url("{%static 'imagens/espaco.jpg'%}");
+            
+        }
+    </style>
+</head>
+<body>
+    {%block conteudo%}{%endblock%}
+</body>
+</html>

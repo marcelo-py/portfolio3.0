@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block titulo%}Teste do Titulo{%endblock%}
+
+{%block conteudo%}
+    <header class="header">
+        <a href="{%url 'index'%}"><h1>Marcelo</h1></a>
+        <nav>
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Habilidades</a></li>
+                <li><a href="">Contatos</a></li>
+                <li><a href="">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home">
+            <div id="introducao">
+                <h2>Bem Vindo!</h2>
+                <h2>Me Chamo <span>Marcelo</span></h2>
+                <strong>Redes sociais:</strong>
+                <div>
+                    <a href=""><img src="{%static 'imagens/facebook.png'%}"></a>
+                    <a href=""><img src="{%static 'imagens/instagram.png'%}"></a>
+                    <a href=""><img src="{%static 'imagens/linkedin.png'%}"></a>
+                    <a href=""><img src="{%static 'imagens/Octocat.png'%}"></a>
+                </div>
+                
+            </div>
+            
+        </section>
+        <section class="pai-sobre">
+            <h2>Sobre Mim</h2>
+            <div id="main-sobre">
+                <div id="img">
+                    <img src="{%static 'imagens/fotoperfil.png'%}">
+                </div>
+                <div id="sobre">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque asperiores, aperiam sunt voluptatem
+                    voluptatibus cumque suscipit corrupti laboriosam esse possimus, facilis deserunt et ad nihil velit maiores veritatis voluptas aspernatur.
+                </div>
+            </div>
+        </section>
+    </main>
+{%endblock%}
