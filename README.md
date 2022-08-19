@@ -8,9 +8,9 @@
 
 ### Ative o anbiente virtual
 * No Linux
-> ```source .venv/bin/activate```
+```source .venv/bin/activate```
 * No Windows
-> ```./venv/activate.bat```
+```./venv/activate.bat```
 
 ### Instale as dependencias (Frameworks e Bibliotecas)
 ```pip install -r requirements.txt```
