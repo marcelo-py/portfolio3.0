@@ -75,8 +75,11 @@ body{
     color: #ffffff;
 }
 
-.home #introducao div{
-    display: inline-block;
+.home #introducao > div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 .home #introducao a{
     text-decoration: none;
@@ -99,7 +102,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .main .pai-sobre h2{
     font-size: 25pt;
@@ -140,6 +143,11 @@ body{
     text-align: justify;
 }
 
+@media (max-width: 350px){
+    .home{
+        height: auto;
+    }
+}
 
 @media (max-width: 780px){
     .main #main-sobre{
@@ -155,6 +163,7 @@ body{
     }
 
 }
+
 
 @media (max-width: 595px){
     .main #main-sobre #sobre{
