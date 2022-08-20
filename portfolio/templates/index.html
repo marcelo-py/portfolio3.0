@@ -29,8 +29,12 @@
                     </div>
                 </div>
             </div>
-            
         </section>
+        <div>
+            {%for c in mensagens%}
+                <p>{{c.nome}} {{c.mensagem}}</p>
+            {%endfor%}
+        </div>
         <section class="pai-sobre">
             <h2>Sobre Mim</h2>
             <div id="main-sobre">
