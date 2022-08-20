@@ -44,10 +44,18 @@
             </div>
         </section>
     </main>
-    <div>
+    <div id="formulario-pai">
         <form action="{{index}}" method="POST">
-            
-                {{formulario}}
+            {% csrf_token %} 
+            <div>
+                <label for="id_nome">Nome</label>
+                {{formulario.nome}}
+            </div>
+            <div>
+                <label for="id_mensagem">Mensagem</label>
+                {{formulario.mensagem}}
+            </div>
+            <button>ENVIAR</button>
         </form>
     </div>
 {%endblock%}
