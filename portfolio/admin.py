@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import Mensagem
 
-# Register your models here.
+
+class MensagemAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'mensagem', 'mostrar')
+    list_editable = ('mostrar',)
+
+
+admin.site.register(Mensagem, MensagemAdmin)

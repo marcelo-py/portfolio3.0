@@ -1,3 +1,17 @@
 from django.db import models
+from django.utils import timezone
+from django.forms import ModelForm
 
-# Create your models here.
+class Mensagem(models.Model):
+    nome = models.CharField(max_length=20, blank=False, default='Anônimo')
+    mensagem = models.TextField(max_length=200, blank=False)
+    mostrar = models.BooleanField(default=True)
+    data = models.DateTimeField(default=timezone.datetime.now)
+
+    def __str__(self):
+        return self.nome
+
+class MensagemForm(ModelForm):
+    class Meta:
+        model = Mensagem
+        exclude = ('mostrar', 'data')
