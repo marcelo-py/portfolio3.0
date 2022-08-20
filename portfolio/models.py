@@ -7,11 +7,11 @@ class Mensagem(models.Model):
     mensagem = models.TextField(max_length=200, blank=False)
     mostrar = models.BooleanField(default=True)
     data = models.DateTimeField(default=timezone.datetime.now)
-
+    gostei = models.BooleanField(default=False)
     def __str__(self):
         return self.nome
 
 class MensagemForm(ModelForm):
     class Meta:
         model = Mensagem
-        exclude = ('mostrar', 'data')
+        exclude = ('mostrar', 'data', 'gostei')
