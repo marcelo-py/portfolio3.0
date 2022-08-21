@@ -30,16 +30,6 @@
                 </div>
             </div>
         </section>
-        <div>
-            {%for c in mensagens%}
-                <p>{{c.nome}} {{c.mensagem}}</p>
-                {%for r in c.respostas.all%}
-                    <blockquote>
-                        >>>>{{r.nome}}: {{r.resposta}}
-                    </blockquote>
-                {%endfor%}
-            {%endfor%}
-        </div>
         <section class="pai-sobre">
             <h2>Sobre Mim</h2>
             <div id="main-sobre">
@@ -53,18 +43,37 @@
             </div>
         </section>
     </main>
-    <div id="formulario-pai">
-        <form action="{{index}}" method="POST">
-            {% csrf_token %} 
-            <div>
-                <label for="id_nome">Nome</label>
-                {{formulario.nome}}
-            </div>
-            <div>
-                <label for="id_mensagem">Mensagem</label>
-                {{formulario.mensagem}}
-            </div>
-            <button>ENVIAR</button>
-        </form>
-    </div>
+    <section id="mensagemComentarioForm">
+        <div>
+            <h3>Todas as Mensagens</h3>
+            <ul class="mensagensLinhas">
+                {%for c in mensagens%}
+                    <li><strong>{{c.nome}}:</strong> {{c.mensagem}}</li>
+                    {%if c.respostas%}
+                        <ul>
+                           {%for r in c.respostas.all%}
+                                <li><strong>{{r.nome}}:</strong> {{r.resposta}}</li>
+                           {%endfor%}
+                        </ul>
+                    {%endif%}
+                    <br>
+                {%endfor%}
+            </ul>
+            </div>    
+        <div>
+            <form action="{{index}}" method="POST">
+                {% csrf_token %} 
+                <div>
+                    <label for="id_nome">Nome</label>
+                    {{formulario.nome}}
+                </div>
+                <div>
+                    <label for="id_mensagem">Mensagem</label>
+                    {{formulario.mensagem}}
+                </div>
+                <button>ENVIAR</button>
+            </form>
+        </div>
+    </section>
+
 {%endblock%}
