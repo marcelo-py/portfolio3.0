@@ -3,8 +3,8 @@ from .models import Mensagem, Resposta
 
 
 class MensagemAdmin(admin.ModelAdmin):
-    list_display = ('id', 'nome', 'mensagem', 'mostrar')
-    list_editable = ('mostrar',)
+    list_display = ('id', 'nome', 'mensagem', 'mostrar', 'gostei')
+    list_editable = ('mostrar', 'gostei')
 
     
 class RespostasAdmin(admin.ModelAdmin):
