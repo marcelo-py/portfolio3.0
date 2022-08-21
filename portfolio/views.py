@@ -4,6 +4,8 @@ from .models import MensagemForm, Mensagem
 
 def index(request):
     objetos = Mensagem.objects.all().filter(mostrar=True)
+    obj1 = Mensagem.objects.get(id=2)
+    print('>>>>>>>>>', obj1.respostas.all())
     if request.method != 'POST':
         return render(request, 'index.html', {
             'formulario': MensagemForm(),

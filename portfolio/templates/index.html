@@ -33,6 +33,11 @@
         <div>
             {%for c in mensagens%}
                 <p>{{c.nome}} {{c.mensagem}}</p>
+                {%for r in c.respostas.all%}
+                    <blockquote>
+                        >>>>{{r.nome}}: {{r.resposta}}
+                    </blockquote>
+                {%endfor%}
             {%endfor%}
         </div>
         <section class="pai-sobre">
