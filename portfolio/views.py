@@ -3,7 +3,7 @@ from .models import MensagemForm, Mensagem
 
 
 def index(request):
-    objetos = Mensagem.objects.all().filter(mostrar=True)
+    objetos = Mensagem.objects.all().filter(mostrar=True).order_by('-id')
     if request.method != 'POST':
         return render(request, 'index.html', {
             'formulario': MensagemForm(),

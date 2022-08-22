@@ -153,26 +153,35 @@ body{
     padding: 20px 0;
 }
 #mensagemComentarioForm form{
-    background-color: #ff334e93;
+    background-color: #ffffff;
     padding: 20px;
-    margin: 50px 0;
+    border: 1px solid #6b6060;
 }
 #mensagemComentarioForm form div{
     margin: 10px 0;
-
+}
+#mensagemComentarioForm > div h3{
+    text-align: center;
 }
 #mensagemComentarioForm form input{
     width: 350px;
     font: 15pt arial;
     display: block;
     padding: 5px;
+    background: #6b6f70;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid;
 }
 #mensagemComentarioForm form button{
     font-weight: bold;
     font: 17pt arial;
     padding: 5px;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
 }
 #mensagemComentarioForm form label{
     font-size: 14pt;
@@ -184,6 +193,9 @@ body{
     padding: 5px;
     font: 15pt arial;
     height: 100px;
+    background: #6b6f70;
+    border: 1px solid;
+    outline: 0;
 }
 
 /*List mensagens*/
@@ -193,16 +205,20 @@ body{
 }
 
 #mensagemComentarioForm > div:first-child{
-    background-color: #ff334e;
-    padding: 20px 0 20px 10px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    width: 300px;
+    border: 1px solid #6b6060;
 }
-#mensagemComentarioForm div > ul{
-    padding: 20px;
-}
+
 #mensagemComentarioForm div > ul > li{
     list-style: none;
     font-size: 15pt;
-    margin-bottom: 5px;
+    margin-bottom: 10px;  
+}
+
+#mensagemComentarioForm div > ul{
+    padding: 15px;
 }
 #mensagemComentarioForm div > ul > ul > li{
     list-style: none;
@@ -234,7 +250,6 @@ body{
     .main #main-sobre #sobre{
         margin-top: 20px;
     }
-
 }
 
 
@@ -254,6 +269,22 @@ body{
     .main .pai-sobre{
         margin-top: 50px;
     }
+    #mensagemComentarioForm > div{
+        margin: 20px 10px!important;
+        width: 95%;
+        padding: 10px!important;
+    }
+    #mensagemComentarioForm > div form{
+        padding: 5px;
+    }
+    #mensagemComentarioForm > div form div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #mensagemComentarioForm > div, input, textarea{
+        width: 100%!important;
+        padding: 0!important;
+    }
 }
 @media (max-width: 247px){
     .main #img{
@@ -263,5 +294,7 @@ body{
     .main #img img{
         height: 100vw;
     }
+    .home #introducao h2, span{
+        font-size: 9vw;
+    }
 }
-
