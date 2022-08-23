@@ -3,8 +3,6 @@ from django.utils import timezone
 from django.forms import ModelForm
 
 
-
-
 class Mensagem(models.Model):
     nome = models.CharField(max_length=20, blank=False, default='Anônimo')
     mensagem = models.TextField(max_length=200, blank=False)
