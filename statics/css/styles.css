@@ -97,6 +97,28 @@ body{
     color: #ff334e;
 }
 
+/*Listar as mensagens*/
+.list-mensagens{
+    margin: 50px auto;
+    text-align: center;
+}
+.list-mensagens #visitante h2{
+    color: #ff334e;
+}
+.list-mensagens #visitante span{
+    font-size: 15pt;
+    color: #ffffff;
+}
+.list-mensagens #resposta{
+    margin-top: 10px;
+}
+.list-mensagens #resposta strong{
+    color: #ff334e;
+}
+.list-mensagens #resposta span{
+    font-size: 12pt;
+    color: #ffffff;
+}
 .main .pai-sobre{
     display: flex;
     flex-wrap: wrap;
