@@ -93,30 +93,22 @@ body{
     color: #ff334e;
 }
 
-/*Listar as mensagens*/
-.list-mensagens{
-    margin: 15vw auto;
+/*Paresenta mengens que gostei na home */
+.show-mensagem{
+    margin: 18vw auto;
     text-align: center;
 }
-.list-mensagens #visitante h2{
+.show-mensagem h2{
     color: #ff334e;
     font-size: 25pt;
 }
-.list-mensagens #visitante span{
+.show-mensagem span{
     font-size: 15pt;
     color: #ffffff;
 }
-.list-mensagens #resposta{
-    margin-top: 10px;
-}
-.list-mensagens #resposta strong{
-    color: #ff334e;
-    font-size: 15pt;
-}
-.list-mensagens #resposta span{
-    font-size: 13pt;
-    color: #ffffff;
-}
+
+
+
 .main .pai-sobre{
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +130,7 @@ body{
     background: #000000cd;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 50px 10px 50px 10px;
+    padding: 10px;
 }
 .main #img{
     border: 3px solid #dcdcdc;
@@ -146,7 +139,6 @@ body{
     width: 200px;
     height: 200px;
     background-size: 50%;
-
 }
 .main #img img{
     height: 240px;
@@ -256,7 +248,7 @@ body{
     }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 750px){
     .main #main-sobre{
         width: 90%;
         padding: 10px;
@@ -264,6 +256,9 @@ body{
     }
     .main{
         width: 100%;
+    }
+    .list-mensagens{
+        margin: 150px auto;
     }
 }
 

@@ -29,24 +29,14 @@
                     </div>
                 </div>
             </div>
-            <div class="list-mensagens">
-                {%for c in mensagens%}
-                    {%if c.gostei%}
-                        <div id="visitante">
-                            <h2>{{c.nome}}</h2>
-                            <span>{{c.mensagem}}</span> 
-                        </div>
-                        {%if c.respostas%}
-                            <div id="resposta">
-                                {%for r in c.respostas.all%}
-                                    <strong>{{r.nome}}: </strong>
-                                    <span>{{r.resposta}}</span>
-                                {%endfor%}
-                            </div>
-                        {%endif%}
-                    {%endif%}
+            
+            <div class="show-mensagem">
+                {%for c in mensagens_curtidas%}
+                    <h2>{{c.nome}}</h2>
+                    <span>{{c.mensagem}}</span>
                 {%endfor%}
             </div>
+        
         </section>
         <section class="pai-sobre">
             <h2>Sobre Mim</h2>
