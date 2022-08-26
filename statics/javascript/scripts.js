@@ -1,14 +1,42 @@
-function iniciar(){
-    var nome_visitante = document.querySelectorAll('.show-mensagem h2')
-    var mensagem_visitante = document.querySelectorAll('.show-mensagem span')
-    var mostrar_msg = document.querySelector('.show-mensagem')
+var currentMensageIndex = 0,
+    time = 2000,
+    objt_nome = document.querySelectorAll('.show-mensagem h2'),
+    objt_msg = mensagem_visitante = document.querySelectorAll('.show-mensagem span')
+    max_obj = objt_nome.length,
+    hora = new Date().getHours()
 
-    var nomes_mensagens = []
-    for (let n=0; n < nome_visitante.length; n++){
-        nomes_mensagens.push([nome_visitante[n].innerText, mensagem_visitante[n].innerText])
+
+
+function nextMensagem(){
+
+    objt_nome[currentMensageIndex].classList.remove('selected')
+    objt_msg[currentMensageIndex].classList.remove('selected')
+    currentMensageIndex ++
+
+    if (currentMensageIndex >= max_obj){
+        currentMensageIndex = 0
     }
-    mostrar_msg.innerHTML = ''
-    
-    console.log(nomes_mensagens[4])
+
+    objt_nome[currentMensageIndex].classList.add('selected')
+    objt_msg[currentMensageIndex].classList.add('selected')
 }
+
+
+function iniciar(){
+    setInterval(() => {
+        nextMensagem()
+    }, time)
+    
+    if (hora >= 5 && hora < 12){
+        objt_nome[0].innerHTML = 'Bom Dia!'
+    } else if (hora >= 12 && hora < 18){
+        objt_nome[0].innerHTML = 'Boa Tarde!'
+    } else if (hora >= 18 && hora <= 23){
+        objt_nome[0].innerHTML = 'Boa Noite!'
+    } else{
+        objt_nome[0].innerHTML = 'Boa Madruga!'
+    }
+}
+
+
 window.addEventListener('load', iniciar)

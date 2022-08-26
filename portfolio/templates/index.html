@@ -31,9 +31,12 @@
             </div>
             
             <div class="show-mensagem">
+                <h2 class="selected"></h2>
+                <span class="selected">Aqui apareceram algumas mensagens Curtidas por mim</span>
                 {%for c in mensagens_curtidas%}
                     <h2>{{c.nome}}</h2>
                     <span>{{c.mensagem}}</span>
+                    
                 {%endfor%}
             </div>
         
