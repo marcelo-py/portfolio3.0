@@ -1,5 +1,5 @@
 var currentMensageIndex = 0,
-    time = 2000,
+    time = 5000,
     objt_nome = document.querySelectorAll('.show-mensagem h2'),
     objt_msg = mensagem_visitante = document.querySelectorAll('.show-mensagem span')
     max_obj = objt_nome.length,
