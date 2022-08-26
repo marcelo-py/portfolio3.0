@@ -20,6 +20,7 @@ body{
     right: 0;
     background: rgb(32, 32, 35);
     border-bottom: 1px solid #f7cf6890;
+    z-index: 2;
 }
 .header >a, h1{
     color: #ffffff;
