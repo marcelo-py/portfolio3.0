@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY') #Essa é uma variavel controlada. Gere uma Has
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://mar-marcelo.herokuapp.com']
 
 
 # Application definition
