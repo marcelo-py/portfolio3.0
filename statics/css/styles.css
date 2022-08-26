@@ -99,7 +99,6 @@ body{
     text-align: center;
     height: 100px;
     position: relative;
-    background-color: #00d9ff;
 }
 
 .show-mensagem .selected{
@@ -117,7 +116,6 @@ body{
 .show-mensagem span{
     font-size: 15pt;
     color: #ffffff;
-    background-color: #6b6060;
     display: block;
     width: 100%;
     position: absolute;
@@ -172,6 +170,13 @@ body{
 }
 
 
+
+
+
+
+
+
+/*mengsagens e formulario*/
 #mensagemComentarioForm{
     display: flex;
     justify-content: space-around;
@@ -274,9 +279,6 @@ body{
     }
     .main{
         width: 100%;
-    }
-    .list-mensagens{
-        margin: 150px auto;
     }
 }
 
