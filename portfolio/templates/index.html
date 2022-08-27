@@ -7,7 +7,7 @@
         <a href="{%url 'index'%}"><h1>Marcelo</h1></a>
         <nav>
             <ul>
-                <li><a href="#main-sobre">Sobre</a></li>
+                <li><a href="#pai-sobre">Sobre</a></li>
                 <li><a href="">Habilidades</a></li>
                 <li><a href="">Contatos</a></li>
                 <li><a href="">Projetos</a></li>
@@ -32,16 +32,15 @@
             
             <div class="show-mensagem">
                 <h2 class="selected"></h2>
-                <span class="selected">Aqui apareceram algumas mensagens Curtidas por mim</span>
+                <span class="selected">Aqui aparecem algumas mensagens</span>
                 {%for c in mensagens_curtidas%}
                     <h2>{{c.nome}}</h2>
                     <span>{{c.mensagem}}</span>
-                    
                 {%endfor%}
             </div>
         
         </section>
-        <section class="pai-sobre">
+        <section class="pai-sobre" id="pai-sobre">
             <h2>Sobre Mim</h2>
             <div id="main-sobre">
                 <div id="img">

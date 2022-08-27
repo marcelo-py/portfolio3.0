@@ -155,7 +155,7 @@ body{
     overflow: hidden;
     width: 200px;
     height: 200px;
-    background-size: 50%;
+    background-size: 100%;
 }
 .main #img img{
     height: 240px;
@@ -266,6 +266,8 @@ body{
     font-weight: bold;
     color: #00d9ff;
 }
+
+
 @media (max-width: 350px){
     .home{
         height: auto;
