@@ -96,11 +96,10 @@ body{
 
 /*Paresenta mengens que gostei na home */
 .show-mensagem{
-    margin: 14vw auto;
+    margin: 14vw 10px;
     text-align: center;
     height: 100px;
     position: relative;
-    margin: 0 10px;
 }
 
 .show-mensagem .selected{
@@ -112,7 +111,7 @@ body{
     position: absolute;
     width: 100%;
     opacity: 0;
-    transition: opacity 800ms;
+    transition: opacity 500ms;
 }
 
 .show-mensagem span{
