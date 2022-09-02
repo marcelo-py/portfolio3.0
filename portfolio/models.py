@@ -23,6 +23,11 @@ class Resposta(models.Model):
         return self.resposta
 
 
+class SobreMim:
+    sobre = models.TextField()
+    mostrar = models.BooleanField(default=False)
+
+
 class MensagemForm(ModelForm):
     class Meta:
         model = Mensagem
