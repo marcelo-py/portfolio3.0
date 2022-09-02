@@ -20,11 +20,11 @@ class Resposta(models.Model):
     cometario = models.ForeignKey(Mensagem, on_delete=models.CASCADE, related_name='respostas')
 
     def __str__(self):
-        return self.resposta
+        return self.nome
 
 
-class SobreMim:
-    sobre = models.TextField()
+class SobreMim(models.Model):
+    sobre = models.TextField(blank=True)
     mostrar = models.BooleanField(default=False)
 
 
