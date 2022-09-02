@@ -11,7 +11,7 @@ class Mensagem(models.Model):
     gostei = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.nome
+        return self.mensagem
 
 
 class Resposta(models.Model):
