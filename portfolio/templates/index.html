@@ -47,14 +47,18 @@
                     <img src="{%static 'imagens/fotoperfil.png'%}">
                 </div>
                 <div id="sobre">
-                    Me chamo Marcelo tenho 22 anos, de São Luís-MA. 
-                    No 3º período de Redes de Computadores no IFMA. 
-                    Comecei a estudar programação no final de 2020, 
-                    logo após passei mais 5 meses estudando POO
-                     e aplicando no Python e Logo depois estudei algumas 
-                     libs nativas como: Tkinter, os, sys etc. 
-                     E então comecei a estudar libs externas como Pygame,
-                      Scrapy, PyMySQL e Django(onde me aprofundo até hoje)
+                    {%if not sobremim.mostrar%}
+                        Me chamo Marcelo tenho 22 anos, de São Luís-MA. 
+                        No 3º período de Redes de Computadores no IFMA. 
+                        Comecei a estudar programação no final de 2020, 
+                        logo após passei mais 5 meses estudando POO
+                        e aplicando no Python e Logo depois estudei algumas 
+                        libs nativas como: Tkinter, os, sys etc. 
+                        E então comecei a estudar libs externas como Pygame,
+                        Scrapy, PyMySQL e Django(onde me aprofundo até hoje)
+                    {%else%}
+                        {{sobremim.sobre}}
+                    {%endif%}
                 </div>
             </div>
         </section>
