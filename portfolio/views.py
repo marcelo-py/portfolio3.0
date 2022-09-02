@@ -1,11 +1,13 @@
 from django.shortcuts import render
-from .models import MensagemForm, Mensagem
+from .models import MensagemForm, Mensagem, SobreMim
 from requests import post
 from json import loads
 from decouple import config
 
 def index(request):
     objetos = Mensagem.objects.all().filter(mostrar=True).order_by('-id')
+    sobre_mim = SobreMim.objects.all()[0]
+
     like_mensagens = Mensagem.objects.filter(gostei=True)
 
     if request.method != 'POST':
@@ -14,6 +16,7 @@ def index(request):
             'formulario': MensagemForm(),
             'mensagens': objetos,
             'mensagens_curtidas': like_mensagens,
+            'sobremim': sobre_mim,
         })
 
     else:
@@ -30,6 +33,7 @@ def index(request):
             'formulario': MensagemForm(),
             'mensagens': objetos,
             'mensagens_curtidas': like_mensagens,
+            'sobremim': sobre_mim,
         })
 
 
@@ -41,5 +45,6 @@ def index(request):
             'formulario': MensagemForm(),
             'mensagens': objetos,
             'mensagens_curtidas': like_mensagens,
+            'sobremim': sobre_mim,
         })
 
