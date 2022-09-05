@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY') #Essa é uma variavel controlada. Gere uma Has
 #ou crie uma vrariavel do mesmo jeit dessa variavel em um arquiv .env e adicione sua Hash
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = ['https://mar-marcelo.herokuapp.com']
 
