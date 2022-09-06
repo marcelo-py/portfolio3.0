@@ -142,7 +142,7 @@ body{
 .main #main-sobre{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     width: 650px auto;
     background: #000000cd;
@@ -156,12 +156,12 @@ body{
     overflow: hidden;
     width: 200px;
     height: 200px;
-    background-size: 100%;
+    background-size: 150%;
 }
 .main #img img{
     height: 240px;
     display: block;
-    margin: auto auto;
+    margin: 0 auto;
 }
 .main #sobre{
     width: 45vmin;
