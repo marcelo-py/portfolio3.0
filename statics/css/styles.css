@@ -170,7 +170,10 @@ body{
     margin: 0 20px;
     text-align: justify;
 }
-
+.pai-habilidades ul h2{
+    text-align: center;
+    color: #ffffff;
+}
 .pai-habilidades ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
