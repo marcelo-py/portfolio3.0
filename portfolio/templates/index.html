@@ -85,7 +85,7 @@
             <h3>Todas as Mensagens</h3>
             <ul class="mensagensLinhas">
                 {%for c in mensagens%}
-                    <strong>{{c.nome}}</strong>
+                    <strong>{{c.nome}}<span>{{c.data|date:'d/m/Y'}}</span></strong>
                     <li>
                         {{c.mensagem}}
                         {%if c.gostei%}
@@ -93,7 +93,7 @@
                                 &#128153;</abbr>{%else%}<abbr title="Somente o dono do site pode curtir"> &#9825;
                             </abbr>
                         {%endif%}
-                        <span>{{c.data|date:'d/m/Y'}}</span>
+                        
                     </li>
                     {%if c.respostas%}
                         <ul>
