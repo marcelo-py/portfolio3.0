@@ -161,7 +161,7 @@ body{
 .main #img img{
     height: 240px;
     display: block;
-    margin: 0 auto;
+    margin: auto auto;
 }
 .main #sobre{
     width: 45vmin;
