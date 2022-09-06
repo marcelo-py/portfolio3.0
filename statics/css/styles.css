@@ -291,6 +291,13 @@ body{
 }
 
 
+.g-recaptcha{
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
+
 @media (max-width: 350px){
     .home{
         height: auto;
