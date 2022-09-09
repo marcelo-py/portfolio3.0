@@ -175,11 +175,21 @@ body{
 
 /*Habilidades e conhecimentos*/
 
+.pai-habilidades{
+    text-align: center;
+    margin-top: 20vmin;
+}
 .pai-habilidades ul{
+    background: #00eeff71;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50vmin;
+    margin: 0 auto;
 }
 .pai-habilidades ul li{
     list-style: none;
+    margin: 5px;
 }
 
 .pai-habilidades ul li img{
@@ -294,6 +304,9 @@ body{
 @media (max-width: 350px){
     .home{
         height: auto;
+    }
+    .pai-habilidades ul{
+        width: 100%;
     }
 }
 
