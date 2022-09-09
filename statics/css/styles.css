@@ -170,27 +170,6 @@ body{
     margin: 0 20px;
     text-align: justify;
 }
-.pai-habilidades{
-    color: #ffffff;
-    text-align: center;
-    margin: 30vw 0;
-}
-.pai-habilidades ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    width: 70%;
-    margin: 0 auto;
-}
-.pai-habilidades ul li{
-    font-size: 20pt;
-    color: #dcdcdc;
-    border: 2px solid;
-    margin: 15px;
-    flex: 1 0 90px;
-    list-style: none;
-}
 
 
 
