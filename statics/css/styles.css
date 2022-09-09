@@ -49,14 +49,6 @@ body{
 }
 
 
-
-
-@media (max-width: 400px){
-    .header nav ul li a{
-        font-size: 11pt;
-    }
-}
-
 .main{
     background-color: #48464cf4;
     padding: 20px 0;
@@ -304,6 +296,12 @@ body{
 @media (max-width: 350px){
     .home{
         height: auto;
+    }
+}
+
+@media (max-width: 400px){
+    .header nav ul li a{
+        font-size: 11pt;
     }
     .pai-habilidades ul{
         width: 100%;
