@@ -173,6 +173,20 @@ body{
 
 
 
+/*Habilidades e conhecimentos*/
+
+.pai-habilidades ul{
+    display: flex;
+}
+.pai-habilidades ul li{
+    list-style: none;
+}
+
+.pai-habilidades ul li img{
+    height: 70px;
+}
+
+
 
 
 /*mengsagens e formulario*/
