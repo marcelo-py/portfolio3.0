@@ -169,10 +169,15 @@ body{
 
 .pai-habilidades{
     text-align: center;
-    margin-top: 20vmin;
+    margin: 25vmin 10px;
+}
+.pai-habilidades h2{
+    color: #ff334e;
 }
 .pai-habilidades ul{
-    background: #00eeff71;
+    background: rgb(143, 143, 143);
+    border: 1px solid #25161685;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -181,7 +186,7 @@ body{
 }
 .pai-habilidades ul li{
     list-style: none;
-    margin: 5px;
+    margin: 10px;
 }
 
 .pai-habilidades ul li img{
