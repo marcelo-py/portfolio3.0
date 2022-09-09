@@ -303,9 +303,6 @@ body{
     .header nav ul li a{
         font-size: 11pt;
     }
-    .pai-habilidades ul{
-        width: 100%;
-    }
 }
 
 @media (max-width: 750px){
@@ -348,6 +345,9 @@ body{
     #mensagemComentarioForm > div, input, textarea{
         width: 100%!important;
         padding: 0!important;
+    }
+    .pai-habilidades ul{
+        width: 100%;
     }
 }
 @media (max-width: 247px){
