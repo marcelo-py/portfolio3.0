@@ -4,8 +4,12 @@ var currentMensageIndex = 0,
     objt_msg = mensagem_visitante = document.querySelectorAll('.show-mensagem span')
     max_obj = objt_nome.length,
     hora = new Date().getHours()
+    ano = new Date().getFullYear(),
+
+    nome_footer = document.querySelector('footer span')
 
 
+nome_footer.innerHTML += ` ${ano}`
 
 function nextMensagem(){
 

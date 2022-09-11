@@ -305,6 +305,12 @@ body{
     -webkit-transform-origin:0 0;
 }
 
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+}
 @media (max-width: 350px){
     .home{
         height: auto;
