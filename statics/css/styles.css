@@ -310,7 +310,9 @@ footer{
     text-align: center;
     color: #ffffff;
     padding: 20px 0;
+    background: #48464cf4;
 }
+
 @media (max-width: 350px){
     .home{
         height: auto;
